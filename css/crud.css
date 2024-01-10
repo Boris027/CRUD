@@ -9,6 +9,7 @@ body{
     box-shadow: 5px 5px 10px black;
     
     backface-visibility: visible;
+    margin-bottom: 40px;
 }
 
 #formulario h1{
@@ -104,3 +105,75 @@ body{
     
 }
 
+
+@media only screen and (width<680px){
+    #formulario{
+        width: 80%;
+    }
+    
+}
+
+
+
+/*aqui empieza el formateo de la tabla*/
+
+
+
+table 			      { 
+    border-spacing: 1; 
+    border-collapse: collapse; 
+    background:white;
+    border-radius:6px;
+    overflow:hidden;
+    max-width:800px; 
+    width:100%;
+    margin:0 auto;
+    position:relative;
+    
+    
+    *               { position:relative }
+    
+    td,th           { padding-left:8px;}
+  
+    thead tr        { 
+      height:60px;
+      background-color: rgb(25, 0, 255);
+      font-size:16px;
+      color: white;
+    }
+    
+    
+
+    tbody tr        { height:48px; border-bottom:1px solid #E3F1D5 ;
+      &:last-child  { border:0; }
+    }
+    
+       td,th 					{ text-align:left;
+          &.l 					{ text-align:right }
+          &.c 					{ text-align:center }
+          &.r 					{ text-align:center }
+      }
+  }
+  
+  table td:hover{
+    background-color: rgb(30, 210, 223);
+    color: white;
+  }
+
+  table th{
+    text-align: center;
+  }
+  table td{
+    text-align: center;
+  }
+  
+ 
+  
+  blockquote {
+    color:white;
+    text-align:center;
+  }
+
+  
+  
+  
