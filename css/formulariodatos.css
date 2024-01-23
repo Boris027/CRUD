@@ -1,9 +1,15 @@
+/***********************************************/
+/*        Crud con el loguin y la tabla        */
+/*             Boris Gallego Ríos              */
+/***********************************************/ 
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/*formateo formulario*/
 
 form{
     box-shadow: 5px 5px 10px black;
@@ -17,10 +23,13 @@ form{
     margin-bottom: 30px;
 }
 
+/*formateo titulo formulario*/
 
 form h1{
     text-align: center;
 }
+
+/*formulario etiqueta formulario*/
 
 form label{
     display: block;
@@ -29,22 +38,21 @@ form label{
 }
 
 
+/*formulario input/entrada del formulario*/
 
 input{
-
 margin-bottom:10px ;   
 padding: 6px;
 height: 40px;
 width: 80%;
 display: block;
 margin: auto;
-
-
 }
 
 
 
 
+/*formateo del boton del formulario*/
 
 form button{
     display: block;
@@ -55,6 +63,7 @@ form button{
     box-shadow: 0px 5px 5px black;
 }
 
+/*formateo iconos de fontsawesome*/
 
 form i{
     color: white;
@@ -62,12 +71,14 @@ form i{
     font-size: 5em;
 }
 
+/*formateo del icono principal*/
+
 #icono{
     font-size: 2.5em;
     text-align: center;
 }
 
-
+/*formateo de la mediaquery que permite la responsividad*/
 
 @media screen and (max-width: 200px) {
     form{

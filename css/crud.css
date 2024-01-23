@@ -1,6 +1,16 @@
+/***********************************************/
+/*        Crud con el loguin y la tabla        */
+/*             Boris Gallego Ríos              */
+/***********************************************/ 
+
+/*Formateo del body*/
+
 body{
     background-color: white;
 }
+
+/*formateo del formulario*/
+
 #formulario{
     background-color: rgb(25, 0, 255);
     margin: auto;
@@ -11,11 +21,14 @@ body{
     backface-visibility: visible;
     margin-bottom: 40px;
 }
+/*formateo del titulo del formulario*/
 
 #formulario h1{
     text-align: center;
     color: white;
 }
+
+/*formateo de las etiquetas del formulario*/
 
 #formulario label{
     color: white;
@@ -25,6 +38,8 @@ body{
     margin-left: 10%;
 }
 
+/*formateo de los campos de input del formulario*/
+
 #formulario input{
     margin-left: 10%;
     margin-right: 10%;
@@ -32,6 +47,8 @@ body{
     width: 80%;
     
 }
+
+/*formateo del boton del formulario*/
 
 #formulario button{
     display: block;
@@ -46,17 +63,23 @@ body{
     box-shadow: 0px 5px 5px black;
 }
 
+/*formateo del grid de los iconos de instagram, google y facebook*/
+
 #grid1{
     margin-left: 20%;
     display: grid;
     grid-template-columns: auto auto auto;
 }
 
+/*formateo del enlace que esta incrustado en los iconos de instagram, google y facebook*/
+
 #grid1 a{
     color: inherit;
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+/*formateo de los iconos de de la tabla*/ 
 
 .fa-instagram{
     font-size: 2em;
@@ -91,6 +114,8 @@ body{
 }
 
 
+/*media query que formatea correctamente el formulario haciendolo responsive*/
+
 @media only screen and (width<1100px){
     #formulario{
         width: 40%;
@@ -118,45 +143,54 @@ body{
 
 
 
-  /*xsss*/
+  /*Aqui empieza el formateo de la tabla*/
+
+  /* Establece la esquina superior izquierda de la primera celda de encabezado con un radio de borde de 15px */
   th:first-child {
     border-top-left-radius: 15px;
     
   }
+
+  /* Establece la esquina superior derecha de la última celda de encabezado con un radio de borde de 15px */
   th:last-child {
     border-top-right-radius: 15px;
   }
 
-
+  /* Establece la esquina inferior izquierda de la primera celda de datos de la última fila con un radio de borde de 15px */
    tr:last-child td:first-child {
     border-bottom-left-radius: 15px;
     
     
   }
 
+  /* Establece la esquina inferior derecha de la última celda de datos de la última fila con un radio de borde de 15px */
   tr:last-child td:last-child {
     border-bottom-right-radius: 15px;
     
     
   }
 
+  /* Aplica estilos cuando se pasa el ratón sobre una celda de datos de la tabla */
   table td:hover{
     background-color: rgb(0, 68, 255);
     color: white;
     
 }
 
+  /* Estilos para las celdas de encabezado de la tabla */
   table th{
     background-color: blue;
     color: white;
     
   }
 
+  /* Estilos para las celdas de datos de la tabla */
   table td{
     background-color: white;
     
   }
-  
+
+  /* Estilos generales para la tabla */
   table {
     border: 1px solid #ccc;
     border-radius: 15px;
@@ -167,12 +201,14 @@ body{
     background-color: blue;
   }
   
+  /* Estilos para el título de la tabla */
   table caption {
     font-size: 1.5em;
     margin: .5em 0 .75em;
     
   }
-  
+
+  /* Estilos para las filas de la tabla */
   table tr {
     background-color: #f8f8f8;
     border: 1px solid #ddd;
@@ -180,35 +216,44 @@ body{
     
   }
   
+  /* Estilos para las celdas de encabezado */
   table th{
     padding: .625em;
     text-align: center;
     color: white;
   }
+
+  /* Estilos para las celdas de datos */
   table td {
     padding: .625em;
     text-align: center;
     
     color: black;
   }
-  
+
+  /* Estilos adicionales para las celdas de encabezado */
   table th {
     font-size: .85em;
     letter-spacing: .1em;
     text-transform: uppercase;
   }
-  
+
+  /* Estilos para pantallas pequeñas (ancho máximo de 600px) */
   @media screen and (max-width: 600px) {
+
+    /* Elimina el borde y establece el fondo blanco para la tabla */
     table {
       border: 0;
       background-color: white;
     }
-  
+
+     /* Ajusta el tamaño del título de la tabla para pantallas pequeñas */
     table caption {
       font-size: 1.3em;
       
     }
-    
+
+    /* Oculta las filas de encabezado de la tabla */
     table thead {
       border: none;
       clip: rect(0 0 0 0);
@@ -221,6 +266,7 @@ body{
       
     }
     
+    /* Estilos para las filas de la tabla en pantallas pequeñas */
     table tr {
       border-bottom: 3px solid #ddd;
       display: block;
@@ -229,7 +275,8 @@ body{
       background-color: blue;
       padding: 5px;
     }
-    
+
+    /* Estilos para las celdas de datos en pantallas pequeñas */
     table td {
       
       border-bottom: 1px solid #ddd;
@@ -239,16 +286,19 @@ body{
       
     }
 
+    /* Ajusta los radios de borde para la primera y última celda de datos en pantallas pequeñas */
     td:first-child {
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
       }
-  
+
+      /* Ajusta los radios de borde para la última celda de datos en pantallas pequeñas */
       td:last-child  {
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
       }
-    
+      
+      /* Restaura el radio de borde para la esquina inferior izquierda de la última celda de datos en la última fila */
       tr:last-child td:first-child {
         border-bottom-left-radius: 0px;
         
